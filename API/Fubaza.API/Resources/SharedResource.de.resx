@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Controller.LookUp.Message.Succeeded.GetSportsAsync" xml:space="preserve">
+    <value>Sportliste erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetSportsAsync" xml:space="preserve">
+    <value>Sportliste nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetPlayingPositionsAsync" xml:space="preserve">
+    <value>Spielpositionsliste erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetPlayingPositionsAsync" xml:space="preserve">
+    <value>Playing Position List Not fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetDesignationsAsync" xml:space="preserve">
+    <value>Bezeichnungsliste wurde erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetDesignationsAsync" xml:space="preserve">
+    <value>Bezeichnungsliste wurde nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetStrongFootOptionsAsync" xml:space="preserve">
+    <value>Liste der starken Füße wurde erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetStrongFootOptionsAsync" xml:space="preserve">
+    <value>Liste der starken Füße wurde nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetTempleteTypeAsync" xml:space="preserve">
+    <value>Vorlagentyp-Liste wurde nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetTempleteTypeAsync" xml:space="preserve">
+    <value>Vorlagentyp-Liste wurde erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetEventTypeAsync" xml:space="preserve">
+    <value>Ereignisliste wurde nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetEventTypeAsync" xml:space="preserve">
+    <value>Ereignisliste wurde erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetTempletesAsync" xml:space="preserve">
+    <value>Vorlagenliste wurde erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetTempletesAsync" xml:space="preserve">
+    <value>Vorlagenliste wurde nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetRoleAsync" xml:space="preserve">
+    <value>Rollenliste wurde nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetRoleAsync" xml:space="preserve">
+    <value>Rollenliste wurde nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.WritePostCaption" xml:space="preserve">
+    <value>Beitragsbeschreibung wurde erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.WritePostCaption" xml:space="preserve">
+    <value>Beitragsbeschreibung wurde nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.AIImangeEnhancementAsync" xml:space="preserve">
+    <value>ImageBase64  Not fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.AIImangeEnhancementAsync" xml:space="preserve">
+    <value>ImageBase64 wurde erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.removebackgroundImage" xml:space="preserve">
+    <value>Background removed successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.removebackgroundImage" xml:space="preserve">
+    <value>Hintergrundentfernung fehlgeschlagen.</value>
+  </data>
+  <data name="Controller.LookUp.InternalMessage.Failed.removebackgroundImage" xml:space="preserve">
+    <value>Interner Serverfehler ist aufgetreten.</value>
+  </data>
+  <data name="Controller.Player.Message.Failed.GetMediaGalleryAsync" xml:space="preserve">
+    <value>Die Mediengalerie konnte nicht erfolgreich abgerufen werden.</value>
+  </data>
+  <data name="Controller.Player.Message.Succeeded.GetMediaGalleryAsync" xml:space="preserve">
+    <value>Mediengalerie erfolgreich abgerufen.</value>
+  </data>
+  <data name="Common.Message.InvalidOrMissingUserId" xml:space="preserve">
+    <value>Ungültige oder fehlende Benutzer-ID.</value>
+  </data>
+  <data name="Common.Error.InvalidToken" xml:space="preserve">
+    <value>Ungültiges Token.</value>
+  </data>
+  <data name="Controller.Player.Message.Succeeded.AddOrUpdatePlayerAsync" xml:space="preserve">
+    <value>Spieler erfolgreich gespeichert.</value>
+  </data>
+  <data name="Controller.Player.Message.Failed.AddOrUpdatePlayerAsync" xml:space="preserve">
+    <value>Spieler konnte nicht gespeichert werden.</value>
+  </data>
+  <data name="Common.Message.ExceptionOccurred" xml:space="preserve">
+    <value>Beim Verarbeiten der Anfrage ist ein Fehler aufgetreten.</value>
+  </data>
+  <data name="Controller.Player.Message.Succeeded.UpdatePlayerProfileAsync" xml:space="preserve">
+    <value>Spielerprofil erfolgreich aktualisiert.</value>
+  </data>
+  <data name="Controller.Player.Message.Failed.UpdatePlayerProfileAsync" xml:space="preserve">
+    <value>Aktualisierung des Spielerprofils fehlgeschlagen.</value>
+  </data>
+  <data name="Controller.Player.Message.Failed.EditPlayerProfileAsync" xml:space="preserve">
+    <value>Fehler beim Aktualisieren des Spielerprofils.</value>
+  </data>
+  <data name="Controller.Player.Message.Succeeded.EditPlayerProfileAsync" xml:space="preserve">
+    <value>Spielerprofil erfolgreich aktualisiert.</value>
+  </data>
+  <data name="Controller.Player.Message.Succeeded.GetPlayerProfileAsync" xml:space="preserve">
+    <value>Spielerprofil erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Player.Message.Failed.GetPlayerProfileAsync" xml:space="preserve">
+    <value>Spielerprofil wurde nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Dashboard.Message.Succeeded.GetSocialStats" xml:space="preserve">
+    <value>Social-Media-Statistik erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Dashboard.Message.Failed.GetSocialStats" xml:space="preserve">
+    <value>Social-Media-Statistik konnte nicht abgerufen werden.</value>
+  </data>
+  <data name="Controller.Player.Message.Succeeded.GetPlayersByCategoryAsync" xml:space="preserve">
+    <value>Spielerliste erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Player.Message.Failed.GetPlayersByCategoryAsync" xml:space="preserve">
+    <value>Spielerliste wurde nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Player.Message.Succeeded.RemovePlayerAsync" xml:space="preserve">
+    <value>Spieler erfolgreich gelöscht.</value>
+  </data>
+  <data name="Controller.Player.Message.Failed.RemovePlayerAsync" xml:space="preserve">
+    <value>Spieler konnte nicht gelöscht werden.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.SocialLogin" xml:space="preserve">
+    <value>Du hast dich erfolgreich angemeldet.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.SocialLogin" xml:space="preserve">
+    <value>Du konntest dich nicht erfolgreich anmelden.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.SignInAsync" xml:space="preserve">
+    <value>Du hast dich erfolgreich angemeldet.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.SignInAsync" xml:space="preserve">
+    <value>Du konntest dich nicht erfolgreich anmelden.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.SignUpAsync" xml:space="preserve">
+    <value>Du hast dich erfolgreich angemeldet.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.SignUpAsync" xml:space="preserve">
+    <value>Du konntest dich nicht erfolgreich anmelden.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.ResendOTPAsync" xml:space="preserve">
+    <value>Dein OTP wurde erfolgreich erneut gesendet.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.ResendOTPAsync" xml:space="preserve">
+    <value>Das erneute Senden des OTP war nicht erfolgreich.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.VerifyOTPAsync" xml:space="preserve">
+    <value>Dein OTP wurde erfolgreich verifiziert.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.VerifyOTPAsync" xml:space="preserve">
+    <value>Dein OTP wurde nicht erfolgreich verifiziert.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.ResetPasswordAsync" xml:space="preserve">
+    <value>Passwort wurde erfolgreich zurückgesetzt.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.ResetPasswordAsync" xml:space="preserve">
+    <value>Das Zurücksetzen des Passworts war nicht erfolgreich.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.VerifyEmailAsync" xml:space="preserve">
+    <value>Deine E-Mail wurde erfolgreich verifiziert.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.VerifyEmailAsync" xml:space="preserve">
+    <value>Deine E-Mail wurde nicht erfolgreich verifiziert.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.ChangePasswordAsync" xml:space="preserve">
+    <value>Passwort erfolgreich geändert.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.ChangePasswordAsync" xml:space="preserve">
+    <value>Passwortänderung fehlgeschlagen.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.GetUserPages" xml:space="preserve">
+    <value>Seitenliste erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.GetUserPages" xml:space="preserve">
+    <value>Seitenliste wurde nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.GetClub" xml:space="preserve">
+    <value>Clubs erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.GetClub" xml:space="preserve">
+    <value>Abrufen der Clubs fehlgeschlagen.</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.AddClubAsync" xml:space="preserve">
+    <value>Club erfolgreich hinzugefügt.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.AddClubAsync" xml:space="preserve">
+    <value>Club wurde nicht erfolgreich hinzugefügt.</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.GetClubProfileAsync" xml:space="preserve">
+    <value>Clubprofil erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.GetClubProfileAsync" xml:space="preserve">
+    <value>Clubprofil wurde nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.EditClubProfileAsync" xml:space="preserve">
+    <value>Clubprofil erfolgreich aktualisiert.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.EditClubProfileAsync" xml:space="preserve">
+    <value>Aktualisierung des Clubprofils fehlgeschlagen.</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.UpdateClubProfileAsync" xml:space="preserve">
+    <value>Clubprofil erfolgreich aktualisiert.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.UpdateClubProfileAsync" xml:space="preserve">
+    <value>Aktualisierung des Benutzerprofils fehlgeschlagen.</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.AddOrUpdateClubOfficialAsync" xml:space="preserve">
+    <value>Clubbeamter erfolgreich hinzugefügt.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.AddOrUpdateClubOfficialAsync" xml:space="preserve">
+    <value>Clubbeamter wurde nicht erfolgreich hinzugefügt.</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.GetClubOfficialsByDepartmentAsync" xml:space="preserve">
+    <value>Beamtenliste erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.GetClubOfficialsByDepartmentAsync" xml:space="preserve">
+    <value>Beamtenliste wurde nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.RemoveClubOfficialAsync" xml:space="preserve">
+    <value>Clubbeamter erfolgreich gelöscht.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.RemoveClubOfficialAsync" xml:space="preserve">
+    <value>Clubbeamter konnte nicht gelöscht werden.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetMatchHistoryAsync" xml:space="preserve">
+    <value>Bevorstehende Spielerliste erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetMatchHistoryAsync" xml:space="preserve">
+    <value>Bevorstehende Spielerliste nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetMatchFairnessAsync" xml:space="preserve">
+    <value>Spielgerechtigkeitsliste erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetMatchFairnessAsync" xml:space="preserve">
+    <value>Spielgerechtigkeit nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetCurrentMatchLineUpAsync" xml:space="preserve">
+    <value>Spielerliste erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetCurrentMatchLineUpAsync" xml:space="preserve">
+    <value>Spielerliste nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetLastMatchLineUpAsync" xml:space="preserve">
+    <value>Spielerliste erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetLastMatchLineUpAsync" xml:space="preserve">
+    <value>Spielerliste nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.SetMatchLineUpAsync" xml:space="preserve">
+    <value>Spielaufstellung wurde festgelegt.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.SetMatchLineUpAsync" xml:space="preserve">
+    <value>Spielaufstellung wurde nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetMatchSummaryAsync" xml:space="preserve">
+    <value>Spielzusammenfassungsliste erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetMatchSummaryAsync" xml:space="preserve">
+    <value>Spielzusammenfassungsliste nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.AddMatchSummaryAsync" xml:space="preserve">
+    <value>Spielzusammenfassung wurde festgelegt.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.AddMatchSummaryAsync" xml:space="preserve">
+    <value>Spielzusammenfassung wurde nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.StartMatchAsync" xml:space="preserve">
+    <value>Das Spiel wurde erfolgreich gestartet.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.StartMatchAsync" xml:space="preserve">
+    <value>Das Starten des Spiels ist fehlgeschlagen.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetUpcomingMatchsAsync" xml:space="preserve">
+    <value>Bevorstehende Spielerliste erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetUpcomingMatchsAsync" xml:space="preserve">
+    <value>Bevorstehende Spielerliste nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.SetMatchDayAsync" xml:space="preserve">
+    <value>Spieltag wurde festgelegt.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.SetMatchDayAsync" xml:space="preserve">
+    <value>Spieltag wurde nicht erfolgreich festgelegt.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetDraftPostsAsync" xml:space="preserve">
+    <value>Entwurfsbeitragsliste erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetDraftPostsAsync" xml:space="preserve">
+    <value>Entwurfsbeitragsliste nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetUpcomingPostsAsync" xml:space="preserve">
+    <value>Bevorstehende Beitragsliste erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetUpcomingPostsAsync" xml:space="preserve">
+    <value>Bevorstehende Beitragsliste nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetCalendarEventsAsync" xml:space="preserve">
+    <value>Ereignisliste erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetCalendarEventsAsync" xml:space="preserve">
+    <value>Ereignisliste nicht erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.SaveDraft" xml:space="preserve">
+    <value>Entwurf konnte nicht gespeichert werden.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.SchedulePost" xml:space="preserve">
+    <value>Geplanter Beitrag wurde nicht festgelegt.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.SaveDraft" xml:space="preserve">
+    <value>Beitrag wurde in deinem Entwurf gespeichert.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.SchedulePost" xml:space="preserve">
+    <value>Geplanter Beitrag wurde erfolgreich festgelegt.</value>
+  </data>
+  <data name="Controller.Notification.Message.Succeeded.GetNotificationsAsync" xml:space="preserve">
+    <value>Benachrichtigungen erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Notification.Message.Failed.GetNotificationsAsync" xml:space="preserve">
+    <value>Fehler beim Abrufen der Benachrichtigungen.</value>
+  </data>
+  <data name="Controller.Notification.Message.Succeeded.MarkAllReadAsync" xml:space="preserve">
+    <value>Alle ungelesenen Benachrichtigungen wurden als gelesen markiert.</value>
+  </data>
+  <data name="Controller.Notification.Message.Failed.MarkAllReadAsync" xml:space="preserve">
+    <value>Keine ungelesenen Benachrichtigungen gefunden.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.UpdateLanguageAsync" xml:space="preserve">
+    <value>Sprache wurde erfolgreich aktualisiert.</value>
+  </data>
+  <data name="Controller.Auth.Failed.Succeeded.UpdateLanguageAsync" xml:space="preserve">
+    <value>Aktualisierung der Sprache fehlgeschlagen.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.DeleteDraftPostAsync" xml:space="preserve">
+    <value>Beitrag erfolgreich gelöscht.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.DeleteDraftPostAsync" xml:space="preserve">
+    <value>Der Beitrag konnte nicht gelöscht werden.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.DeleteUserAsync" xml:space="preserve">
+    <value>Your account has been deleted successfully.</value>
+  </data>
+  <data name="Controller.Auth.Failed.Succeeded.DeleteUserAsync" xml:space="preserve">
+    <value>Das Konto konnte nicht gelöscht werden. Bitte versuchen Sie es später erneut.</value>
+  </data>
+  <data name="Controller.Notification.Message.Failed.UpdateNotificationStatus" xml:space="preserve">
+    <value>Die Aktualisierung der Benachrichtigungseinstellungen ist fehlgeschlagen</value>
+  </data>
+  <data name="Controller.Notification.Message.Succeeded.UpdateNotificationStatus" xml:space="preserve">
+    <value>Ihre Benachrichtigungseinstellungen wurden erfolgreich aktualisiert.</value>
+  </data>
+  <data name="EventService.ValidateLineUpAsync.NoPlayers" xml:space="preserve">
+    <value>Keine Spieler für die Aufstellung angegeben.</value>
+  </data>
+  <data name="EventService.ValidateLineUpAsync.PlayerNotFound" xml:space="preserve">
+    <value>Einer oder mehrere ausgewählte Spieler existieren nicht.</value>
+  </data>
+  <data name="EventService.ValidateLineUpAsync.InvalidSport" xml:space="preserve">
+    <value>Ungültige Sportkonfiguration.</value>
+  </data>
+  <data name="EventService.ValidateLineUpAsync.NotDefined" xml:space="preserve">
+    <value>Für diese Sportart ist keine Aufstellungsprüfung definiert.</value>
+  </data>
+  <data name="EventService.ValidateLineUpAsync.MinPlayers" xml:space="preserve">
+    <value>{0} benötigt mindestens {1} Spieler.</value>
+  </data>
+  <data name="EventService.ValidateLineUpAsync.MinPosition" xml:space="preserve">
+    <value>{0} benötigt mindestens {1} {2}.</value>
+  </data>
+  <data name="EventService.SetMatchLineUpAsync.Failed" xml:space="preserve">
+    <value>Die Aufstellung konnte nicht gespeichert werden.</value>
+  </data>
+  <data name="EventService.ValidateBySportAsync.InvalidSport" xml:space="preserve">
+    <value>Ungültige Sportkonfiguration.</value>
+  </data>
+  <data name="EventService.ValidateBySportAsync.NotDefined" xml:space="preserve">
+    <value>Für diese Sportart ist keine Aufstellungsprüfung definiert.</value>
+  </data>
+  <data name="EventService.ValidateBySportAsync.MinPlayers" xml:space="preserve">
+    <value>{0} benötigt mindestens {1} Spieler.</value>
+  </data>
+  <data name="EventService.ValidateBySportAsync.MinPosition" xml:space="preserve">
+    <value>{0} benötigt mindestens {1} {2}.</value>
+  </data>
+  <data name="IdentityService.SignInAsync.EmailNotRegistered" xml:space="preserve">
+    <value>Ihre E-Mail-Adresse ist nicht registriert.</value>
+  </data>
+  <data name="IdentityService.SignInAsync.AccountDeleted" xml:space="preserve">
+    <value>Dieses Konto wurde gelöscht.</value>
+  </data>
+  <data name="IdentityService.SignInAsync.InvalidPassword" xml:space="preserve">
+    <value>Ungültiges Passwort.</value>
+  </data>
+  <data name="IdentityService.SignInAsync.InvalidEmailOrPassword" xml:space="preserve">
+    <value>Falsche E-Mail-Adresse oder falsches Passwort.</value>
+  </data>
+  <data name="IdentityService.SignInAsync.EmailNotVerified" xml:space="preserve">
+    <value>Email not verified. A new verification code has been sent to your email.</value>
+  </data>
+  <data name="IdentityService.SignInAsync.CannotSignIn" xml:space="preserve">
+    <value>Der Benutzer kann sich nicht anmelden.</value>
+  </data>
+  <data name="IdentityService.SignUpAsync.EmailEmpty" xml:space="preserve">
+    <value>Die E-Mail-Adresse darf nicht leer sein.</value>
+  </data>
+  <data name="IdentityService.SignUpAsync.RegistrationSuccessful" xml:space="preserve">
+    <value>Registrierung erfolgreich. Bitte bestätigen Sie Ihre E-Mail-Adresse.</value>
+  </data>
+  <data name="IdentityService.SignUpAsync.RegistrationFailed" xml:space="preserve">
+    <value>Registration failed.</value>
+  </data>
+  <data name="IdentityService.SignUpAsync.ActiveAccountExists" xml:space="preserve">
+    <value>Ein aktives Konto mit dieser E-Mail-Adresse existiert bereits.</value>
+  </data>
+  <data name=".ActiveAccountExists" xml:space="preserve">
+    <value>Für diese E-Mail-Adresse existiert bereits ein aktives Konto.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetThrowingHandOptionsAsync" xml:space="preserve">
+    <value>Liste der Wurfhand konnte nicht erfolgreich abgerufen werden.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetThrowingHandOptionsAsync" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Controller.Event.Message.Failed.DeleteMatchSummaryAsync" xml:space="preserve">
+    <value>Spielzusammenfassung konnte nicht gelöscht werden</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.DeleteMatchSummaryAsync" xml:space="preserve">
+    <value>Übereinstimmungszusammenfassung erfolgreich gelöscht</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.DeleteMatchDayAsync" xml:space="preserve">
+    <value>Der Spieltag konnte nicht gelöscht werden.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.DeleteMatchDayAsync" xml:space="preserve">
+    <value>Spieltag erfolgreich gelöscht</value>
+  </data>
+  <data name="Service.Player.Message.Failed.CheckPlayerJerseyAsync" xml:space="preserve">
+    <value>Diese Trikotnummer ist bereits einem anderen Spieler zugeteilt.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.GetMatchLinupbyClud" xml:space="preserve">
+    <value>Spielaufstellung konnte nicht abgerufen werden</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.GetMatchLinupbyClud" xml:space="preserve">
+    <value>Spielaufstellung erfolgreich abgerufen</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.EndMatchAsync" xml:space="preserve">
+    <value>Das Spiel konnte nicht beendet werden.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.EndMatchAsync" xml:space="preserve">
+    <value>Das Spiel wurde erfolgreich beendet</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.GetClubStats" xml:space="preserve">
+    <value>Vereinsstatistiken erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.GetClubStats" xml:space="preserve">
+    <value>Vereinsstatistiken konnten nicht abgerufen werden.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetCompetitionTypesAsync" xml:space="preserve">
+    <value>Wettbewerbstypen konnten nicht abgerufen werden</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetCompetitionTypesAsync" xml:space="preserve">
+    <value>Die Wettbewerbstypen wurden erfolgreich abgerufen.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.CancelPostAsync" xml:space="preserve">
+    <value>Die Stornierung des Beitrags ist fehlgeschlagen.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.CancelPostAsync" xml:space="preserve">
+    <value>Beitrag erfolgreich abgebrochen</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.RemoveUserPages" xml:space="preserve">
+    <value>Fehler beim Entfernen der Benutzerseiten</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.RemoveUserPages" xml:space="preserve">
+    <value>Seiten erfolgreich entfernt.</value>
+  </data>
+</root>

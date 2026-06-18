@@ -1,0 +1,1 @@
+dotnet ef migrations add "addplayerer-throwinghand" --project Application/Fubaza.Application.Infrastructure --startup-project API/Fubaza.API --output-dir Persistence/Migrations --context ApplicationDbContext

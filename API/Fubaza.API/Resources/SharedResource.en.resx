@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Controller.LookUp.Message.Succeeded.GetSportsAsync" xml:space="preserve">
+    <value>Sport List fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetSportsAsync" xml:space="preserve">
+    <value>Sport List Not fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetPlayingPositionsAsync" xml:space="preserve">
+    <value>Playing Position List fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetPlayingPositionsAsync" xml:space="preserve">
+    <value>Playing Position List Not fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetDesignationsAsync" xml:space="preserve">
+    <value>Designation List fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetDesignationsAsync" xml:space="preserve">
+    <value>Designation List Not fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetStrongFootOptionsAsync" xml:space="preserve">
+    <value>Strong Foot List fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetStrongFootOptionsAsync" xml:space="preserve">
+    <value>Strong Foot List Not fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetTempleteTypeAsync" xml:space="preserve">
+    <value>Templete Type List Not fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetTempleteTypeAsync" xml:space="preserve">
+    <value>Templete Type List fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetEventTypeAsync" xml:space="preserve">
+    <value>Event List Not fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetEventTypeAsync" xml:space="preserve">
+    <value>Event List fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetTempletesAsync" xml:space="preserve">
+    <value>Templete List fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetTempletesAsync" xml:space="preserve">
+    <value>Templete List Not fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetRoleAsync" xml:space="preserve">
+    <value>Role List fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetRoleAsync" xml:space="preserve">
+    <value>Role List Not fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.WritePostCaption" xml:space="preserve">
+    <value>Post Description fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.WritePostCaption" xml:space="preserve">
+    <value>Post Description  Not fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.AIImangeEnhancementAsync" xml:space="preserve">
+    <value>ImageBase64  Not fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.AIImangeEnhancementAsync" xml:space="preserve">
+    <value>ImageBase64  fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.removebackgroundImage" xml:space="preserve">
+    <value>Background removed successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.removebackgroundImage" xml:space="preserve">
+    <value>Background removal failed.</value>
+  </data>
+  <data name="Controller.LookUp.InternalMessage.Failed.removebackgroundImage" xml:space="preserve">
+    <value>Internal server error occurred.</value>
+  </data>
+  <data name="Controller.Player.Message.Failed.GetMediaGalleryAsync" xml:space="preserve">
+    <value>Media gallery could not be fetched successfully.</value>
+  </data>
+  <data name="Controller.Player.Message.Succeeded.GetMediaGalleryAsync" xml:space="preserve">
+    <value>Media gallery fetched successfully.</value>
+  </data>
+  <data name="Common.Message.InvalidOrMissingUserId" xml:space="preserve">
+    <value>Invalid or missing UserId.</value>
+  </data>
+  <data name="Common.Error.InvalidToken" xml:space="preserve">
+    <value>Invalid token.</value>
+  </data>
+  <data name="Controller.Player.Message.Succeeded.AddOrUpdatePlayerAsync" xml:space="preserve">
+    <value>Player saved successfully.</value>
+  </data>
+  <data name="Controller.Player.Message.Failed.AddOrUpdatePlayerAsync" xml:space="preserve">
+    <value>Player could not be saved.</value>
+  </data>
+  <data name="Common.Message.ExceptionOccurred" xml:space="preserve">
+    <value>An error occurred while processing the request.</value>
+  </data>
+  <data name="Controller.Player.Message.Succeeded.UpdatePlayerProfileAsync" xml:space="preserve">
+    <value>Player Profile updated successfully.</value>
+  </data>
+  <data name="Controller.Player.Message.Failed.UpdatePlayerProfileAsync" xml:space="preserve">
+    <value>Failed to update player profile.</value>
+  </data>
+  <data name="Controller.Player.Message.Failed.EditPlayerProfileAsync" xml:space="preserve">
+    <value>Failed to update Player profile.</value>
+  </data>
+  <data name="Controller.Player.Message.Succeeded.EditPlayerProfileAsync" xml:space="preserve">
+    <value>Player Profile updated successfully.</value>
+  </data>
+  <data name="Controller.Player.Message.Succeeded.GetPlayerProfileAsync" xml:space="preserve">
+    <value>Player Profile  fetched successfully.</value>
+  </data>
+  <data name="Controller.Player.Message.Failed.GetPlayerProfileAsync" xml:space="preserve">
+    <value>Player Profile  not fetched successfully.</value>
+  </data>
+  <data name="Controller.Dashboard.Message.Succeeded.GetSocialStats" xml:space="preserve">
+    <value>Social stats fetched successfully.</value>
+  </data>
+  <data name="Controller.Dashboard.Message.Failed.GetSocialStats" xml:space="preserve">
+    <value>Social stats could not be fetched.</value>
+  </data>
+  <data name="Controller.Player.Message.Succeeded.GetPlayersByCategoryAsync" xml:space="preserve">
+    <value>Player  List fetched successfully.</value>
+  </data>
+  <data name="Controller.Player.Message.Failed.GetPlayersByCategoryAsync" xml:space="preserve">
+    <value>Player list Not fetched successfully.</value>
+  </data>
+  <data name="Controller.Player.Message.Succeeded.RemovePlayerAsync" xml:space="preserve">
+    <value>Player  deleted successfully.</value>
+  </data>
+  <data name="Controller.Player.Message.Failed.RemovePlayerAsync" xml:space="preserve">
+    <value>Player could not be deleted.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.SocialLogin" xml:space="preserve">
+    <value>You are successfully logged in.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.SocialLogin" xml:space="preserve">
+    <value>You are not successfully logged in.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.SignInAsync" xml:space="preserve">
+    <value>You are successfully logged in.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.SignInAsync" xml:space="preserve">
+    <value>You are not successfully logged in.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.SignUpAsync" xml:space="preserve">
+    <value>You are successfully logged in.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.SignUpAsync" xml:space="preserve">
+    <value>You are not successfully logged in.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.ResendOTPAsync" xml:space="preserve">
+    <value>Your OTP has been resent successfully.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.ResendOTPAsync" xml:space="preserve">
+    <value>OTP resend was unsuccessful.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.VerifyOTPAsync" xml:space="preserve">
+    <value>Your OTP has been Verified successfully.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.VerifyOTPAsync" xml:space="preserve">
+    <value>Your OTP has not been Verified successfully.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.ResetPasswordAsync" xml:space="preserve">
+    <value>Password has been reset successfully.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.ResetPasswordAsync" xml:space="preserve">
+    <value>Password reset was unsuccessful.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.VerifyEmailAsync" xml:space="preserve">
+    <value>Your Email has been Verified successfully.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.VerifyEmailAsync" xml:space="preserve">
+    <value>Your Email has not been Verified successfully.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.ChangePasswordAsync" xml:space="preserve">
+    <value>Password changed successfully.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.ChangePasswordAsync" xml:space="preserve">
+    <value>Password change failed.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.GetUserPages" xml:space="preserve">
+    <value>Pages List fetched successfully.</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.GetUserPages" xml:space="preserve">
+    <value>Pages List Not fetched successfully.</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.GetClub" xml:space="preserve">
+    <value>Clubs fetched successfully.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.GetClub" xml:space="preserve">
+    <value>Failed to fetch Clubs.</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.AddClubAsync" xml:space="preserve">
+    <value>Club added successfully.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.AddClubAsync" xml:space="preserve">
+    <value>Club Not added successfully.</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.GetClubProfileAsync" xml:space="preserve">
+    <value>Club Profile  fetched successfully.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.GetClubProfileAsync" xml:space="preserve">
+    <value>Club Profile  not fetched successfully.</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.EditClubProfileAsync" xml:space="preserve">
+    <value>Club Profile updated successfully.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.EditClubProfileAsync" xml:space="preserve">
+    <value>Failed to update Club profile.</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.UpdateClubProfileAsync" xml:space="preserve">
+    <value>Club Profile updated successfully.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.UpdateClubProfileAsync" xml:space="preserve">
+    <value>Failed to update user profile.</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.AddOrUpdateClubOfficialAsync" xml:space="preserve">
+    <value>Club Official added successfully.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.AddOrUpdateClubOfficialAsync" xml:space="preserve">
+    <value>Club Official Not added successfully.</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.GetClubOfficialsByDepartmentAsync" xml:space="preserve">
+    <value>Official  List fetched successfully.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.GetClubOfficialsByDepartmentAsync" xml:space="preserve">
+    <value>Official list Not fetched successfully.</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.RemoveClubOfficialAsync" xml:space="preserve">
+    <value>Club official deleted successfully.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.RemoveClubOfficialAsync" xml:space="preserve">
+    <value>Club official could not be deleted.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetMatchHistoryAsync" xml:space="preserve">
+    <value>Upcoming Match List fetched successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetMatchHistoryAsync" xml:space="preserve">
+    <value>Upcoming Match List Not fetched successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetMatchFairnessAsync" xml:space="preserve">
+    <value>Match Fairness  List fetched successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetMatchFairnessAsync" xml:space="preserve">
+    <value>Match Fairness Not fetched successfully</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetCurrentMatchLineUpAsync" xml:space="preserve">
+    <value>Player  List fetched successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetCurrentMatchLineUpAsync" xml:space="preserve">
+    <value>Player list Not fetched successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetLastMatchLineUpAsync" xml:space="preserve">
+    <value>Player  List fetched successfully</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetLastMatchLineUpAsync" xml:space="preserve">
+    <value>Player list Not fetched successfully</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.SetMatchLineUpAsync" xml:space="preserve">
+    <value>Match Lineup has been set.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.SetMatchLineUpAsync" xml:space="preserve">
+    <value>Match Lineup Has Not been successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetMatchSummaryAsync" xml:space="preserve">
+    <value>Match Summary List fetched successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetMatchSummaryAsync" xml:space="preserve">
+    <value>Match Summary List Not fetched successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.AddMatchSummaryAsync" xml:space="preserve">
+    <value>Match Summary has been set.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.AddMatchSummaryAsync" xml:space="preserve">
+    <value>Match Summary Has Not been successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.StartMatchAsync" xml:space="preserve">
+    <value>The match has started successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.StartMatchAsync" xml:space="preserve">
+    <value>Failed to start the match.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetUpcomingMatchsAsync" xml:space="preserve">
+    <value>Upcoming Match List fetched successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetUpcomingMatchsAsync" xml:space="preserve">
+    <value>Upcoming Match List Not fetched successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.SetMatchDayAsync" xml:space="preserve">
+    <value>Match Day has been set.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.SetMatchDayAsync" xml:space="preserve">
+    <value>Match Day Has Not been successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetDraftPostsAsync" xml:space="preserve">
+    <value>Draft Post List fetched successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetDraftPostsAsync" xml:space="preserve">
+    <value>Draft Post List Not fetched successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetUpcomingPostsAsync" xml:space="preserve">
+    <value>Upcoming Post List fetched successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetUpcomingPostsAsync" xml:space="preserve">
+    <value>Upcoming Post List Not fetched successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.GetCalendarEventsAsync" xml:space="preserve">
+    <value>Event List fetched successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.GetCalendarEventsAsync" xml:space="preserve">
+    <value>Event List Not fetched successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.SaveDraft" xml:space="preserve">
+    <value>Draft could not be saved.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.SchedulePost" xml:space="preserve">
+    <value>Scheduled post has not been set.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.SaveDraft" xml:space="preserve">
+    <value>Post has been saved in your draft.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.SchedulePost" xml:space="preserve">
+    <value>Scheduled post has been set successfully.</value>
+  </data>
+  <data name="Controller.Notification.Message.Succeeded.GetNotificationsAsync" xml:space="preserve">
+    <value>Notifications fetched successfully.</value>
+  </data>
+  <data name="Controller.Notification.Message.Failed.GetNotificationsAsync" xml:space="preserve">
+    <value>Failed to fetch Notifications.</value>
+  </data>
+  <data name="Controller.Notification.Message.Succeeded.MarkAllReadAsync" xml:space="preserve">
+    <value>All unread notifications have been marked as read.</value>
+  </data>
+  <data name="Controller.Notification.Message.Failed.MarkAllReadAsync" xml:space="preserve">
+    <value>No unread notifications found.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.UpdateLanguageAsync" xml:space="preserve">
+    <value>Language updated successfully.</value>
+  </data>
+  <data name="Controller.Auth.Failed.Succeeded.UpdateLanguageAsync" xml:space="preserve">
+    <value>Failed to update language.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.DeleteDraftPostAsync" xml:space="preserve">
+    <value>Post deleted successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.DeleteDraftPostAsync" xml:space="preserve">
+    <value>Post could not be deleted.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.DeleteUserAsync" xml:space="preserve">
+    <value>Your account has been deleted successfully.</value>
+  </data>
+  <data name="Controller.Auth.Failed.Succeeded.DeleteUserAsync" xml:space="preserve">
+    <value> Failed to delete the account. Please try again later.</value>
+  </data>
+  <data name="Controller.Notification.Message.Failed.UpdateNotificationStatus" xml:space="preserve">
+    <value>Failed to update notification settings.</value>
+  </data>
+  <data name="Controller.Notification.Message.Succeeded.UpdateNotificationStatus" xml:space="preserve">
+    <value>Your notification settings have been updated successfully.</value>
+  </data>
+  <data name="EventService.ValidateLineUpAsync.NoPlayers" xml:space="preserve">
+    <value>No players provided for lineup.</value>
+  </data>
+  <data name="EventService.ValidateLineUpAsync.PlayerNotFound" xml:space="preserve">
+    <value>One or more selected players do not exist.</value>
+  </data>
+  <data name="EventService.ValidateLineUpAsync.InvalidSport" xml:space="preserve">
+    <value>Sport configuration is invalid.</value>
+  </data>
+  <data name="EventService.ValidateLineUpAsync.NotDefined" xml:space="preserve">
+    <value>Lineup validation is not defined for this sport.</value>
+  </data>
+  <data name="EventService.ValidateLineUpAsync.MinPlayers" xml:space="preserve">
+    <value>{0} requires at least {1} players.</value>
+  </data>
+  <data name="EventService.ValidateLineUpAsync.MinPosition" xml:space="preserve">
+    <value>{0} requires at least {1} {2}.</value>
+  </data>
+  <data name="EventService.SetMatchLineUpAsync.Failed" xml:space="preserve">
+    <value>Unable to set match lineup.</value>
+  </data>
+  <data name="EventService.ValidateBySportAsync.InvalidSport" xml:space="preserve">
+    <value>Sport configuration is invalid.</value>
+  </data>
+  <data name="EventService.ValidateBySportAsync.NotDefined" xml:space="preserve">
+    <value>Lineup validation is not defined for this sport.</value>
+  </data>
+  <data name="EventService.ValidateBySportAsync.MinPlayers" xml:space="preserve">
+    <value>{0} requires at least {1} players.</value>
+  </data>
+  <data name="EventService.ValidateBySportAsync.MinPosition" xml:space="preserve">
+    <value>{0} requires at least {1} {2}.</value>
+  </data>
+  <data name="IdentityService.SignInAsync.EmailNotRegistered" xml:space="preserve">
+    <value>Your  Email Is Not  Register.</value>
+  </data>
+  <data name="IdentityService.SignInAsync.AccountDeleted" xml:space="preserve">
+    <value>This account has been deleted.</value>
+  </data>
+  <data name="IdentityService.SignInAsync.InvalidPassword" xml:space="preserve">
+    <value>Invalid password.</value>
+  </data>
+  <data name="IdentityService.SignInAsync.InvalidEmailOrPassword" xml:space="preserve">
+    <value>Incorrect email or password.</value>
+  </data>
+  <data name="IdentityService.SignInAsync.EmailNotVerified" xml:space="preserve">
+    <value>Email not verified. A new verification code has been sent to your email.</value>
+  </data>
+  <data name="IdentityService.SignInAsync.CannotSignIn" xml:space="preserve">
+    <value>User cannot sign in.</value>
+  </data>
+  <data name="IdentityService.SignUpAsync.EmailEmpty" xml:space="preserve">
+    <value>Email cannot be empty.</value>
+  </data>
+  <data name="IdentityService.SignUpAsync.RegistrationSuccessful" xml:space="preserve">
+    <value>Registration successful. Please verify your email.</value>
+  </data>
+  <data name="IdentityService.SignUpAsync.RegistrationFailed" xml:space="preserve">
+    <value>Registration failed.</value>
+  </data>
+  <data name="IdentityService.SignUpAsync.ActiveAccountExists" xml:space="preserve">
+    <value>An active account with this email already exists.</value>
+  </data>
+  <data name=".ActiveAccountExists" xml:space="preserve">
+    <value>An active account with this email already exists.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetThrowingHandOptionsAsync" xml:space="preserve">
+    <value>Throwing Hand List Not fetched successfully.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetThrowingHandOptionsAsync" xml:space="preserve">
+    <value>Throwing Hand List fetched successfully.</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.DeleteMatchSummaryAsync" xml:space="preserve">
+    <value>Match summary could not be deleted</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.DeleteMatchSummaryAsync" xml:space="preserve">
+    <value>Match summary deleted successfully</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.DeleteMatchDayAsync" xml:space="preserve">
+    <value>Match day could not be deleted</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.DeleteMatchDayAsync" xml:space="preserve">
+    <value>Match day deleted successfully</value>
+  </data>
+  <data name="Service.Player.Message.Failed.CheckPlayerJerseyAsync" xml:space="preserve">
+    <value>This jersey number is already assigned to another player.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.GetMatchLinupbyClud" xml:space="preserve">
+    <value>Failed to fetch match lineup.</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.GetMatchLinupbyClud" xml:space="preserve">
+    <value>match lineup fetched successfully</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.EndMatchAsync" xml:space="preserve">
+    <value>Failed to end match.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.EndMatchAsync" xml:space="preserve">
+    <value>Match ended successfully</value>
+  </data>
+  <data name="Controller.Club.Message.Succeeded.GetClubStats" xml:space="preserve">
+    <value>Club stats fetched successfully.</value>
+  </data>
+  <data name="Controller.Club.Message.Failed.GetClubStats" xml:space="preserve">
+    <value>Failed to fetch club stats.</value>
+  </data>
+  <data name="Controller.LookUp.Message.Failed.GetCompetitionTypesAsync" xml:space="preserve">
+    <value>Failed to fetch Competition types</value>
+  </data>
+  <data name="Controller.LookUp.Message.Succeeded.GetCompetitionTypesAsync" xml:space="preserve">
+    <value>Successfully fetched the Competition types</value>
+  </data>
+  <data name="Controller.Event.Message.Failed.CancelPostAsync" xml:space="preserve">
+    <value>Failed to cancel the post.</value>
+  </data>
+  <data name="Controller.Event.Message.Succeeded.CancelPostAsync" xml:space="preserve">
+    <value>Post canceled successfully</value>
+  </data>
+  <data name="Controller.Auth.Message.Failed.RemoveUserPages" xml:space="preserve">
+    <value>Failed to remove user pages.</value>
+  </data>
+  <data name="Controller.Auth.Message.Succeeded.RemoveUserPages" xml:space="preserve">
+    <value>Pages removed successfully.</value>
+  </data>
+</root>

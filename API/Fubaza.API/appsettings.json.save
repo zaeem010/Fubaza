@@ -1,0 +1,96 @@
+{
+  "AllowedHosts": "*",
+  "Serilog": {
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Microsoft": "Warning",
+        "Microsoft.AspNetCore": "Warning",
+        "Microsoft.Hosting.Lifetime": "Warning",
+        "System": "Warning",
+        "Hangfire": "Warning"
+      }
+    },
+    "WriteTo": [
+      {
+        "Name": "File",
+        "Args": {
+          "path": "./Logs/log-.log",
+          "rollingInterval": "Day",
+          "rollOnFileSizeLimit": true,
+          "retainedFileCountLimit": 31,
+          "outputTemplate": "[{Timestamp:HH:mm:ss.fff} {Level:u3}] {Message} {Properties}{NewLine}{Exception}"
+        }
+      }
+    ],
+    "Enrich": [
+      "FromLogContext",
+      "WithMachineName",
+      "WithProcessId",
+      "WithThreadId"
+    ],
+    "Properties": {
+      "ApplicationName": "Fubaza"
+    }
+  },
+  "MailSettings": {
+    "From": "noreply@fubaza.com",
+    "Host": "smtp.strato.de",
+    "Port": 465,
+    "UserName": "noreply@fubaza.com",
+    "Password": "fubaza2025fubaza2025",
+    "DisplayName": "Fubaza",
+    "EnableVerification": true,
+    "DefaultTo": "info@fubaza.com"
+  },
+  "AppSettings": {
+    "BaseUrl": "https://fubuza-api.ahdus.de/"
+  },
+  "PersistenceSettings": {
+    "UseMsSql": true,
+    "UsePostgres": false,
+    "connectionStrings": {
+      //"mssql": "Data Source=DESKTOP-KDQ7S7N;Initial Catalog=Fubaza;Integrated Security=True;MultipleActiveResultSets=True;TrustServerCertificate=True;"
+      //"mssql": "Data Source=34.123.222.155;Initial Catalog=LiveFubaza;user id=sa;password=Secure@Pass123!;integrated security=false;MultipleActiveResultSets=True;TrustServerCertificate=True;"
+      "mssql": "Data Source=10.128.0.3;Initial Catalog=LiveFubaza;User ID=sa;Password=NewStrongPasswordHere#$$$@54321;MultipleActiveResultSets=True;TrustServerCertificate=True;"
+    }
+  },
+  "SerializationSettings": {
+    "UseSystemTextJson": false,
+    "UseNewtonsoftJson": true
+  },
+  "JwtSettings": {
+    "key": "j3de5hfDATsRCdYaxXf3bJS2Fsd8jDAcYPb28",
+    "Issuer": "https://fubaza.de/",
+    "Audience": "https://fubaza.de/",
+    "tokenExpirationInMinutes": 3600,
+    "refreshTokenExpirationInDays": 7
+  },
+  "FirebaseSettings": {
+    "CredentialPath": "",
+    "CredentialJson": "{\r\n  \"type\": \"service_account\",\r\n  \"project_id\": \"fubaza\",\r\n  \"private_key_id\": \"7cbfe946945c4911811010d4e15e816083085a1c\",\r\n  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+eb00viqkGtDp\\neNUiDYv2JBXsuNHHAv0+IH2T0zYxIS/goFkByNnSksBvLgQ0tDrFjOBj/xe5n5QQ\\nIdSehfqJgVBu4AzHmTQQE0LeueeWC/TxiDDGVKORTxsmIJhBIFYkp57yzoWgvXOu\\nLe8NtYhhFrXIgD7uH6UTkVf80Hyrx5eY130qmrpv4ejmYcYjeBml8qYAJwutuX2h\\nrW0Fo0+27EKm7FZOmBu+GNFyFAB2wH0pCW0etrASmS2xjErvyJrUBg1fmT+OnLr2\\ng5AYBuUmaTSn3y9DYhtKYhL7/hfrYznB8EB/xOfiHLJRXuxf75ebntyaBQ3c60sg\\n9UwJZ/OTAgMBAAECggEAUDb1ivIxA/Y1F7Wm0FXzJN/yicQVuCFWo+TL7carkkof\\nHxJ4GWvL68WYm9m9tLJX890NnJ8Pj0EYeii9IVtb9K+MP31EdIRc7A4ogaK52DNF\\n3rfTjpqTXbz6OnbMl9S14m7i3e9CUDyorGg0vcm+2uBVAtCbb+3Mt65kZxgoALDt\\ntkykPSgGNRbZ06xeqEifWznXXI6+7+2Kge0FjrQqUXgsjF5sG8ou3wjdLLm8xhQm\\nZIU3Ft1bg/L40S+g+wDtUzjMccEXErrppkCk5UiNbsWg9/08zTMs23qYFCnhcosZ\\nkRxcgEIJF5SFAH0ine+6vyt/khA5W+X9rycFw7bOoQKBgQDohND9IJIsnv1r+yL3\\n8OEx7mrvFaMvi1IMfAQv5GRxSzhNl99NbWTDe1fBCObbQj3Fik2OV8/NjAEweN2Q\\niz7CL3d8NqErhWDIBdVJk8sYSayQqm5v56gK/4LAnXSEur2Y3QPqIpUDHOiBCsKf\\no0x1bX7W8vySA+yLefbKOprAcwKBgQDRtgAts8JfNvSN0GeejpwCkPvcpS3zMkZT\\nBT9aqAt34OPcToAdzHZgpgE5w9ThH9rOp30tB3u3bJXSIpa2Uv1xs5r1JSbf+pQ3\\nTv3broCu1sgK6QJXwX+GdheWKphFYNjKkmZDXwq2zLrc9z9yMgefdzf4IgAxMnDA\\n4BeojwzYYQKBgQCsGDF+SC8oa3xyAWx+SoDCrg3jawZe2CUgLGIE+GwHFn9Tnsad\\nzgu4S4BF1UrYmYySuqxwYDnjjm4K7EpBA26t1uf+vYhIZ+2b3gVg8cxt64mXgS1A\\nEhtkGH00BtYIrxZJH7wX/QSBS1IiwE4QTZL3jtVETo/1moXnLZwlTX7gVQKBgATW\\nlhp30zwvIGVFMZ7O23qTrbvhc7Xwqv6vWE7XIayaW6dxiDMnzHNeYRjcE8U93uZ1\\npsWrLoeE0dAPTDrYn1BIPIL7YHI6bcD46ZJv7DgcbHET/yHXLQIFJ3YndWvkWBwU\\nVJepUa31+zmt2qDf1p0vOvNWlXqNF1zbzq/s3PcBAoGAWYhddvf0QngCIWQcDCjP\\nuis+YjyYEQqm5g6q30l7ONtNr42K5yafoqjbOpdfgXW0zQwfs9nLfuYxeMheL5/z\\n0wOOi6jzgR2sEqvy/aHsUILgn+Dh+Xk7CAYmJDeF1CD2bZvngOoGSa9Md2HTlSw8\\nfgCzDnB1ouxcXdLEAG6z3/Y=\\n-----END PRIVATE KEY-----\\n\",\r\n  \"client_email\": \"fubaza@fubaza.iam.gserviceaccount.com\",\r\n  \"client_id\": \"104795663475428745726\",\r\n  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\r\n  \"token_uri\": \"https://oauth2.googleapis.com/token\",\r\n  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\r\n  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/fubaza%40fubaza.iam.gserviceaccount.com\",\r\n  \"universe_domain\": \"googleapis.com\"\r\n}\r\n"
+  },
+  "GeminiSettings": {
+    "ProjectId": "fubaza",
+    "Location": "global",
+    "ModelName": "gemini-2.5-flash-image-preview",
+    "CredentialPath": "",
+    "CredentialJson": "{\r\n  \"type\": \"service_account\",\r\n  \"project_id\": \"fubaza\",\r\n  \"private_key_id\": \"7cbfe946945c4911811010d4e15e816083085a1c\",\r\n  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+eb00viqkGtDp\\neNUiDYv2JBXsuNHHAv0+IH2T0zYxIS/goFkByNnSksBvLgQ0tDrFjOBj/xe5n5QQ\\nIdSehfqJgVBu4AzHmTQQE0LeueeWC/TxiDDGVKORTxsmIJhBIFYkp57yzoWgvXOu\\nLe8NtYhhFrXIgD7uH6UTkVf80Hyrx5eY130qmrpv4ejmYcYjeBml8qYAJwutuX2h\\nrW0Fo0+27EKm7FZOmBu+GNFyFAB2wH0pCW0etrASmS2xjErvyJrUBg1fmT+OnLr2\\ng5AYBuUmaTSn3y9DYhtKYhL7/hfrYznB8EB/xOfiHLJRXuxf75ebntyaBQ3c60sg\\n9UwJZ/OTAgMBAAECggEAUDb1ivIxA/Y1F7Wm0FXzJN/yicQVuCFWo+TL7carkkof\\nHxJ4GWvL68WYm9m9tLJX890NnJ8Pj0EYeii9IVtb9K+MP31EdIRc7A4ogaK52DNF\\n3rfTjpqTXbz6OnbMl9S14m7i3e9CUDyorGg0vcm+2uBVAtCbb+3Mt65kZxgoALDt\\ntkykPSgGNRbZ06xeqEifWznXXI6+7+2Kge0FjrQqUXgsjF5sG8ou3wjdLLm8xhQm\\nZIU3Ft1bg/L40S+g+wDtUzjMccEXErrppkCk5UiNbsWg9/08zTMs23qYFCnhcosZ\\nkRxcgEIJF5SFAH0ine+6vyt/khA5W+X9rycFw7bOoQKBgQDohND9IJIsnv1r+yL3\\n8OEx7mrvFaMvi1IMfAQv5GRxSzhNl99NbWTDe1fBCObbQj3Fik2OV8/NjAEweN2Q\\niz7CL3d8NqErhWDIBdVJk8sYSayQqm5v56gK/4LAnXSEur2Y3QPqIpUDHOiBCsKf\\no0x1bX7W8vySA+yLefbKOprAcwKBgQDRtgAts8JfNvSN0GeejpwCkPvcpS3zMkZT\\nBT9aqAt34OPcToAdzHZgpgE5w9ThH9rOp30tB3u3bJXSIpa2Uv1xs5r1JSbf+pQ3\\nTv3broCu1sgK6QJXwX+GdheWKphFYNjKkmZDXwq2zLrc9z9yMgefdzf4IgAxMnDA\\n4BeojwzYYQKBgQCsGDF+SC8oa3xyAWx+SoDCrg3jawZe2CUgLGIE+GwHFn9Tnsad\\nzgu4S4BF1UrYmYySuqxwYDnjjm4K7EpBA26t1uf+vYhIZ+2b3gVg8cxt64mXgS1A\\nEhtkGH00BtYIrxZJH7wX/QSBS1IiwE4QTZL3jtVETo/1moXnLZwlTX7gVQKBgATW\\nlhp30zwvIGVFMZ7O23qTrbvhc7Xwqv6vWE7XIayaW6dxiDMnzHNeYRjcE8U93uZ1\\npsWrLoeE0dAPTDrYn1BIPIL7YHI6bcD46ZJv7DgcbHET/yHXLQIFJ3YndWvkWBwU\\nVJepUa31+zmt2qDf1p0vOvNWlXqNF1zbzq/s3PcBAoGAWYhddvf0QngCIWQcDCjP\\nuis+YjyYEQqm5g6q30l7ONtNr42K5yafoqjbOpdfgXW0zQwfs9nLfuYxeMheL5/z\\n0wOOi6jzgR2sEqvy/aHsUILgn+Dh+Xk7CAYmJDeF1CD2bZvngOoGSa9Md2HTlSw8\\nfgCzDnB1ouxcXdLEAG6z3/Y=\\n-----END PRIVATE KEY-----\\n\",\r\n  \"client_email\": \"fubaza@fubaza.iam.gserviceaccount.com\",\r\n  \"client_id\": \"104795663475428745726\",\r\n  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\r\n  \"token_uri\": \"https://oauth2.googleapis.com/token\",\r\n  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\r\n  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/fubaza%40fubaza.iam.gserviceaccount.com\",\r\n  \"universe_domain\": \"googleapis.com\"\r\n}\r\n"
+  },
+  "GoogleAuthSettings": {
+    "clientId": "1092667725415-i2dn1lshvbub0vib5lo0seegmiauc98k.apps.googleusercontent.com"
+  },
+  "FacebookAuthSettings": {
+    "AppId": "574663195703476",
+    "AppSecret": "7bf0269d89b64b85dcdf418788dc6713"
+  },
+  "OpenAISettings": {
+    "ApiKey": "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",
+    "BaseUrl": "https://api.openai.com/v1/"
+  },
+  "CloudStorageSetting": {
+    "BucketName": "fubaza-prod-files",
+    "CredentialJson": "{ \"type\": \"service_account\", \"project_id\": \"fubaza\", \"private_key_id\": \"2a401c31128bc0765491b8b4639f483b129ea0d1\", \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC1ey/FbA3CChCB\\nyKmLnZWdNZsYz3nVSBx7KqErzeDv3aFbr3FeZhN1dt5R0fSus6wlcLD3LgTqhMdH\\nbq52cpw+YcBK78LuXFsaOBwxL7Up+z0REoVlK4QHrtmPZ5czf7pSWNISdja6efms\\nsqIJzLUXGMDoQVzSGY/tmU0ofQUBtjoj6DUrIDCT+s0i42XpiJPqd+lw93Ttv48n\\nhuAoLDsRDRiGeMncRgYUl//1eTl8vRs2eT2X+lFyEEKtpR5hZpXkPJts8Ea98Sot\\nY6xjkxB3c9lYrif9j8sKa7HDG6C+mu3q4wobHfHYTcd6EaX2Zjuaz6dD5k3ix4JE\\npjovT/ejAgMBAAECggEAUBbPHDb1U16RrlTZzc17i2duzOIzCBbMyuYjPmubCwAq\\nB4ZDZ79wcvREZKNdcgPEwrkav9rFPKHgN/v2bjtiDH2jGO76faqwYb/FYUeGkcJY\\nTsJ3sBAmMiXNyWWT6pxBo7mi65bTzDOsJbSnod9/Q3QfHeBKkEXLqLVwwZ96qCf+\\ntzRy5Y+BKLS9EjuTnWQNgC1Ze8FAwSd4ff6aOTXHWv483FMQfJZtynCAVvhj9kUK\\nlMownqFVNdYB1W+qpxngFoaKaEzmEniECUJobFY47v+omkAA39AgtYD4gbtk2Phu\\nnOrAQRK75R/GmSNfs4Jh84K6Ksu5+bmlKtc1aeWkkQKBgQDjdFcIDsoKILCGq6Ym\\nWe+wSmtDqKRc/x4YBzp2siXVqB19rc4V8POBJeT7T71BjRY7eKy/5FLZMh5SE/Hy\\nd8CLSciZ8zuZw1wydZdVDpoaPvZ6MA45+RKQdDf0HSJsCpu8AHuTSP6d96SKn6j8\\nAekktN+LI29mI2iQUnmSlORkzwKBgQDMQdE0z7KWeMLeXWMvzACH9UfiVX9vOJLB\\n6FAFejPsNbUrVN7G+HMf3Am4MZj2OxedkeOZL9t7X3H8rbnl1piBhvBpphxJbIeP\\n6SrXZ627PetTxs+8Kwl3ONcnt5s3diZSY2iInRgCAOIQ7KkhSB2ok0uZyREW9zn9\\n0fzIu6gc7QKBgCbCjJIy8vsG1w4b8hRW/yFrjRvagSfX0akGkk/ny8q8+0mPdK8I\\ngHZhnsO0suuYv1EjH00T+4pHoCMcgv5uqcESsbyKVn29bNiscT1tX5VZZWctCT+X\\n0jILm/1deaAvrpo6+tP+fGUu7jsxOfq32KMIr49mWnVtU0REybLQ7JrBAoGANuWh\\nor4H06VVSopy9A+yPNhRn6U3AN+FohQcHbzAY8XzkVfYIEX6Ox/ahOTfpZ4wNKtX\\nLn7MUJZQfob6palNh9KKnvqEM7+1l5olZ4t4CBEWRIf0oTA39RET0proXrmkhxQs\\nrjr6jt9J4x6YPlexkPM1qHl/3FpJ/cwIUrMM9ekCgYAxStaeaM9wAz4rPgIqoV2d\\nu8I2j+OUoWfgsq8sJIOlXE55mRGJwJH5kEokz9Wr254Pfs88zB4/XI8nzMLIC1hJ\\nBCSdXqsmkn2CPQcOJ0nfQFyb5pE6CEQOBI4DRd/H/tYtZz+B7nJnkGTYPD2zo/pa\\nO6O+CXxrZVCiilrrDoeWNQ==\\n-----END PRIVATE KEY-----\\n\", \"client_email\": \"fubaza-prod-files-uploader@fubaza.iam.gserviceaccount.com\", \"client_id\": \"108761471679011196005\", \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\", \"token_uri\": \"https://oauth2.googleapis.com/token\", \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\", \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/fubaza-prod-files-uploader%40fubaza.iam.gserviceaccount.com\", \"universe_domain\": \"googleapis.com\" }"
+  }
+
+}

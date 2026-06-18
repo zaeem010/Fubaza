@@ -1,0 +1,6 @@
+@Fubaza.API_HostAddress = http://localhost:5080
+
+GET {{Fubaza.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
